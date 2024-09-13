@@ -6,13 +6,8 @@
     <meta name="description" content="Your description here" />
     <meta name="author" content="Rashaun Dillard" />
     <meta name="keywords" content="keyword1, keyword2, keyword3" />
-    <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
-    <link
-      rel="icon"
-      href="se_project_coffeeshop/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -105,13 +100,19 @@
           <form class="reservation__form form">
             <fieldset class="form__fieldset">
               <label for="name" class="form__label">
-                Name *<input type="text" id="name" class="form__input" />
+                Name *<input
+                  type="text"
+                  id="name"
+                  class="form__input"
+                  required
+                />
               </label>
               <label for="number-of-guest" class="form__label">
                 Number of guests *<input
                   type="number"
                   id="number-of-guest"
                   class="form__input"
+                  required
                 />
               </label>
               <label for="date-time" class="form__label">
@@ -119,6 +120,7 @@
                   type="datetime-local"
                   id="date-time"
                   class="form__input"
+                  required
                 />
               </label>
               <label for="your-email" class="form__label">
@@ -126,10 +128,11 @@
                   type="email"
                   id="your-email"
                   class="form__input"
+                  required
                 />
               </label>
             </fieldset>
-            <button class="form__button">Book a table</button>
+            <button class="form__button" type="submit">Book a table</button>
             <label
               for="form-checkbox"
               class="form__label form__label_type_checkbox"
@@ -138,6 +141,7 @@
                 type="checkbox"
                 id="form-checkbox"
                 class="form__checkbox"
+                required
               />
               I agree with terms of use
             </label>
@@ -267,7 +271,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">© 2024 Rashaun Dillard</div>
+        <p class="footer__copyright">© 2024 Rashaun Dillard</p>
       </footer>
     </div>
   </body>
